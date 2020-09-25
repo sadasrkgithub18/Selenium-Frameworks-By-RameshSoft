@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+<!-- <listeners>
+<listener class-name="com.rameshsoft.selenium.listeners.TestListenerTC">
+</listener>
+</listeners> -->
+
+<!-- <listeners>
+<listener class-name="com.rameshsoft.selenium.listeners.ScreenShotAdapter">
+</listener>
+</listeners> -->
+
+<listeners>
+<listener class-name="com.rameshsoft.selenium.listeners.AnnotationRetry"></listener>
+</listeners>
+
+
+ <parameter name = "brow" value = "chrome">
+ </parameter>
+  <test thread-count="5" name="Test">
+    <classes>
+    
+      <!-- <class name="com.rameshsoft.selenium.TestCases.GmailPOMDemo"/> -->
+      <class name="com.rameshsoft.selenium.TestCases.FacebookTestCase"/>
+      <!-- <class name="com.rameshsoft.selenium.TestCases.GMailTestCase"/>  
+       -->
+      <class name="com.rameshsoft.selenium.TestCases.RamesSoftTestClass"/>     
+      <class name="com.rameshsoft.selenium.TestCases.BingTestCase"/>
+      <!-- <class name="com.rameshsoft.selenium.TestCases.RetryTest"/>    -->
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
